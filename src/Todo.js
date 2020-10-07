@@ -4,7 +4,6 @@ import './Todo.css';
 import db from './firebase';
 import DeleteIcon from '@material-ui/icons/Delete';
 import EditIcon from '@material-ui/icons/Edit';
-import { light } from '@material-ui/core/styles/createPalette';
 
 const useStyles = makeStyles((theme) => ({
     paper: {
@@ -70,7 +69,7 @@ function Todo(props) {
             <ListItem>
                 <ListItemAvatar>
                 </ListItemAvatar>
-                <ListItemText primary={props.text.todo} secondary="Tasks" />
+                <ListItemText primary={props.text.todo} secondary="My Tasks" />
                 <div className={classes.root}>
                     <Button startIcon={<EditIcon />} variant="contained" color="primary" onClick={e => setOpen(true)}>
                         Edit
